@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>RK</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://memberly-app.github.io/sites/assets/dist/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
+    <style type="text/css">
+      .col {
+      	border: 1px solid #dbdbdb;
+      	border-radius: 5px;
+      	margin: 5px;
+      }
+      
+      
+    </style>
+  </head>
+  <body style="background:#F2F3F8!important">
+    <div id="booksdiv" class="container">
+      <div id="0" class="row">
+        <div id="0" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">NBC Connecticut</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">New Law Requiring Emergency Insulin and Diabetes Prescription Supplies Taking Effect Jan. 1</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">The Health Care Cost Institute reports that the annual insulin cost for 
+diabetics has nearly doubles between 2012 to 2016 raising from $2,865 to ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">1 week ago</small></p>
+          </div><img src="data:image/jpeg;base64,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" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="1" class="row">
+        <div id="1" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Everyday Health</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Metformin May Lead to Healthier Pregnancies in Type 2 Diabetics</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Women with type 2 diabetes who take insulin to manage their blood sugar may 
+see improvements in their health and pregnancy outcomes ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">3 weeks ago</small></p>
+          </div><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHAAcAMBEQACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAABgEHAwQFAv/EADoQAAIBAwIDBQYCCAcAAAAAAAECAwAEEQUSITFRBgcTQWEUMlJxgZGhsRYiIzNiwcLRFUJzkuHw8f/EABoBAAIDAQEAAAAAAAAAAAAAAAAEAQMFAgb/xAAqEQACAwACAgECBQUBAAAAAAAAAQIDEQQSITFBEzIFFFFxgRUiYcHRM//aAAwDAQACEQMRAD8AdtP1yW0hEMkfiovu/rYI9KzYXuKxnobuFGyXZPDBqeqS6htUoI41PBQc5+dc2Wufgs4/GjT5XlmnFFJMdsSM56KK4SbL5TjBf3M0dauxplq7SywwS8QgmPM/LIzVkK235KbuRGEfD8lX6preq6hH7Pe30k0IbIjBATOegxTsYxisRiWWTseyZzBXRWZbVN9zEpHvMAPXjUP0Sl5LqEDQxqpQhVAUE8uFZ0t3Wejr6qKijb02+NlIcjcje8KmE+rOLqFYv8nXbWLQIWBdj8OwirvqxElxbNw4V5cNdTtKwxnko8hVEn2emhXWq49TDiuSwyQTPBMssTbXU5BqU3F6jicFOLjL0dr9JZPDI9lXxOofh9sUx+ZeejP/AKct+7wcGljSCgDV7w+0M3ZnTbXTtLPh3d0GZ5ccUUYBI9STj0wafhDFhh3WuUuxUEkjyyNLK7PI3vOxyT8zVoq3vs8Y4AUAefdOaAOxo1kt/HIkUgjuhh7c/wAY44Pz/tXMnhZCPb9y0+yvadb2BItXi8JnfwGzxET4J5/CcHnyPpyr6r17GO7S7LwbV9B7PdSQ+SnhScl1k0a9U+8FIwVydm/o1kt7dlZM+Gg3MBzPSraoKb8+hblXuqHj2xhl0fT5oiiQLGccGTgf+aZdUGswzI8q6D3dFOeIwzPExyUJBPWkmurw2oSUoqSMdQdEgE8hmgCOIPyoAQ+9G99s1+34Y2Wqgj1yafqex0wuVDpZ1E+rRYKAIPKgD1bzyW8okiYhgc0ewTzyOUfaCK/0x/CkSDU02yKHHB2U5Ho3y9aq6uLGXNTg18nW0TtHFc3EUE52JcZFtvYkoy8GhYnzHDaTzBHmONNtb9od4tySUH/H/BjpY0Tb0y+awufFC7lIwy55iu659HovyKFdDDuza/aeFlEkZ8cFIxTLvj8GfHg29sb8CzLIZZWkfmxz8qUb16a0Y9Y9URg9DjrUE6hoitY7aNdqAEYyetNqCSMmVspy8mLVLFJrd3RQsiDII9KiyGrTqi5wkk/RS3eEmNcjf4oF/M13x/sK/wAQWXfwLFXiJBNBB5oAKkAoAyLJhSrcQcZHXHL86gkZtH7cXthGILu3jvoOQ8Rtkij0cDj9c1VKqLGYcu2DXkeNJ1S01e29osmJQHaysMMh6EUnODg8ZsU3Ruj2Ru1wXG/o9ot1OxkGUQA465qyuPZivJt6RxfJ3hFEGePYu3yGKYxehBylm6TFNHdW4aMghhyHlUpqSIlF1yxmC9u0t7Ni2DIylVXzJrmckonddTnPF6KZ7xRjUrT/AED+dTxvtYfiP/ohSpgzyGoIPNSAUAFABQAUAMHYa8e27QQwL+7ugY3HyBK/j+Zqm+Ow/Yb4Vjjcl+pZ9IG6dHRLlbe4ZJWwsg5nyIq2qWPBXlVucU18Hefg6N9DTDM5PU0KUbtGSY2ZSehxSabXo2WlL2iGJY5YknqTUPySkl6EbvNt2hutLdj++t3YDoA1O0LImNzpqVmL4EurxIhqCDzUgFABQAUAFADx3T9nW1jXmvZci0sVJY5xudgQB9sn7da4klJYyyqbrkpoul9G04xlPZwvQhjkfXNcOmGZhcuVcnvYVtRtDZXbw7tyjBVuoNJzj1lhsUW/Vh2MImlCbPEfb8O7hXPZnfSO7h4qDsKCBK705hLLovD9ZIJkP0ZcfnTtEtjhi86HSzf1EerxMg0EEVIBQAUAFABQBY/dH2osNJefStSYW63UoeO4Jwu7GNrdOQwa5aOk/BczCNFLPgKBksx4VGIlNt4hQ1q6ju75mhIMaAKp69TSV0lKXg2+JW668l7ZoVUMnftNGhWMNcgyOfLOAPtTEalnkzrOVJvI+jHqOlQrE0luNjDjszwb70TrWajqnkz7JS8lX95UeU06b4WkX7hT/TU8b5K/xJfa/wB/9CPTZlkGgCKkAoAKACgAoAKAHfsb2nfMel6lKWXgLeRznH8J/kfpSt9W+UaXD5KT6TLBsLRryfYDtUD9Y4zil4Q7PDQutVcdZ3RpNmF2+GWPxFzmmPpRwQ/M2t7psJukQOJMKfhH86leSp5F5h5naK2ieVhyHM+Z8qG0lpMe05KKK67VaS+raQYYT+3iPiRD4iPL0yKopn1l5H+VR9WvF7RVbAqxVlKsDggjBBp8wfXsKAINAEVIBQAUAFABQAUAXT3a6ydS0v8Aaspuk/ZyMfMjkfqMUp16Ta/U0lN20pv48Dr4effYt+Vd4Vdv0FeC8uLcYilIHTnSkZyj6NadMJ+0eZ7ia4IM0hfHIHkKhycvbJhXCH2o2LDTZbtd24RoP8xGSflXUK3Iru5Cq8fIm96HZiKxtY9WiYFmlEcpA27sg4J9eGKbqTj4ZlcqcLP7ksZW/KrhQKAPJFABUgFABQAUAFADr3ZyOtxqCKxC7I2wPI5b+9K8n4Zpfh3uSLF/xK827fGOPkM0v9SXrR/8vXu4alcF4UEDFo8ni2aIjgFOfUU1U9jhmcmOT1r2Vd3w6r4+s2+lxTOUtI98y54eIwBGfULj/dTEEIWy14IHpXRWFBAUAQRQAVIBQAUAFAHV7OXOqQ362+kTLFNcEKQ6ghtuTxyCccTyquyMWtki+idin1rfllspu2LvxuxxwOGfSs49Av8AJ1bDRLi8hExdYo290sMk/SroUSkt9Cd3NhXLqlrMGoabPYMBLhkbk68q4nXKHsto5ELl49mi9x7LE85YqEUsxHPAGa5W74LZ51bZTF/ezajezXtyczTvvbjnHp9BgfStNLPB5yUuz0wVJyFABUATQAYoAMUAGKADafwoAfu7zQp/EN5LbOsznw7cMMEg829P/aWvnrUImnw6/pp2z8Flns3ciPcJ4y/wYI/GuHx5YW/1CG+vB2dKmjuLGJoWOVUKy55EUxXJSj4EORFwsakaPaWeNbVYCwaRmyB0qq9rrgxwIt2ds8CN2mcx9ntQZeYgaqK/vQ/yvFEv2Kj5eVaJgBQQFABQAVAE0AAoJN/SLEaldLaKzpI7DDiMuF+Y8vnXM5dVpZVX3l1HHS+w8FtdCW+nW5RcFY1QqM+vHiPSlp8jViRpVcBRls3uD5os8dvqMTzHCcRu6ZH/AH71VU0p6xjlQc6mojjjC7txx1NPGHuv0IKsyNuQlT1U4rNXj0ekaT8MCxJJJJJ8yaASzwjak7PNqmlXEUz+H48TKgx1HAmr6q3vYR5PITThEoZlkjYpMhSRDtdDzVhwI+9PGMRQAUAFABQAUASGI5HFQBZ3d/bN+j8WxCzzyuwUDngkf00lf5niNrhZCjsxtm0m+hjMklu20DJIIJHzxXEqppa0Wx5VMpYpGlVYwet77Nm9tvTPCp1kYt3D/9k=" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="2" class="row">
+        <div id="2" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">The CT Mirror</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Pandemic places greater burdens on Connecticut diabetics</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Pandemic places greater burdens on Connecticut diabetics ... “as far as if 
+they offered a good health insurance plan and, most importantly, ... 
+Patients are completely reliant on medication insulin, and without it, they 
+could die.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">1 month ago</small></p>
+          </div><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHAAcAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAQIDBQYHAAj/xAA1EAACAQMDAwIEBAUEAwAAAAABAgMABBEFEiExQVETYQYicYEUUpGxMkJyofAjYoLBFTND/8QAGQEAAwEBAQAAAAAAAAAAAAAAAQIDBAAF/8QAJREAAgIBBAICAgMAAAAAAAAAAAECAxEEEiExIjITQXHwBSNR/9oADAMBAAIRAxEAPwCigQYFFooqOJcUQooij1UVKoFMWpFrgYHinjpTBThQOwOWng1GKcK44kHSlFMFOrgk0R4pWqNDilJzXHElezTa9XHGYjv4/wAwqUahH5Fc0GrTjvSjWLjzRDg6fFeo7YBFGBsLuyMVy/T9WuGmABrYG7nNjuXJOKhZKxPxRpphU4ve+S7S8QttHUUSJQF3MOK5/p2sTLfMsvHPetLeausdkTxnFJO6cZJbR4aauUNzkXAu4d2MipTcRAA5Fc/srq8vJyyg7c8Yqzvvx0UGVDZxT/2bsroSKp2Y+zWC7i8043UQ7isxoVzPIn+vE2fcVJ8QX6QQZQgN4pFqYuexIo9DJV720aQXcXkV78XF5H61zI/EM471a6Ndy6gMvLt+lXslGuO6XRlqqnbLbHs3ouoj3H60ouYfIrM3VrLBbtKlxuIGcGs4NfnBI8UtNsLk3BjX6eynCmjHojv/AAIzfQZpWhlUZaJwPJU1vvhy5NtaQx5tFwvcqD960wunZF4tAGGPlAYH96x2a2cZYUM/v4PRr/joSgpOxLP7/pgvhKzilVpZBnaCTWzsZbOaHbuCqR3Bqq0DThb3cy4HpM7YwMDBP7UfbW0sWqy20L4hjAIYkE884xVrlbZFfE8ENPKitv5Y7iKX4fs5bn1oJGaTPIxxVq2gxy2hRkJ+1F28ckVx853BumKu0yU/grTparFHFjyzPq7apTzVHCMxo+kx2jlCo9sii/iC3dbRHgUfKfm47VYFQLnpSapMFtiiKXdhgCqygpwlFko2OucZRKO1uHEAw6j/AIYqr+Kfh6W9tWukkO/GSBWmsbaBYkSfeZCR2+UCrO8t0Fu0Q5BXqO9ZdNooVSckatTr7L47X0fPcu5HZG4ZTg1ofhV5xu2plR0OKk1DQDJqz8EKz810DRtDghgQQxA8DPFWaU+OzNGThyuDM6s+rixkMdruQLyyisKJj3NfQCWpSNoxBlH4YGuRfFmgNBq0n4dNqtzgDpR+ONa4WDpWTsfk8l7eG3spkto0DSMNxy20IOfbk+1XGnWs9zbsA0ZkADKqPk464x1Bx2qW2tPQtljfL4J65JPPv+9HwQwxbXgU7/IQD9jz+9BQ+jtxUQndJtjATPfxRei2Bs52ne6xOz8Se9G6lGVkjuUtjCzSYbIwH60XZzh4cvpshbwADTVww2hZy4yehdF3xXEu/BJR15yfP0o2IsVGF/tTo5k9REFmIgwzvcAD3pkt56UjKByDV+I9kXz0CTtsnywof1IZbtldwhPTNTy4mbcaGhhVrth8mB2NQ35lgtt8clnDBEEYC7XYeowKle2UQ7lkZ+OM02C2jYESemAemAKIlKRxbA2cdPatDSwQTeTL3GnKZmcgUZpiOOFZgB4qeRCxY9qisJGRsAVjp9zVP0Zaqk7DG+qTVdPSa53MoJ81fRtIxAANDzx/6uDyavevEjV2Vdhd3ikp+HjkXeQrCYL8uR29u/0qwTUb1YSzWSqw7GdeBgfqc54+lA2cMcgLlJ8lCf8A1hlPH0PnpVnZRxwjIt7h8j+EwADnzwOaeHqLLsE1eX1dOhZ5EdxMpbZjAznj7UtpHF6XG/k/lBI4p2vu8lipEeEEi8luc8cYqDTreUttEYB65YcCgvdjP0RcRtCgC+mSexYAZqrvN34h8gA56Zq1trP08GTlgeNp4qtvV3Xb5OOeKXUeoKuwYttHJAoYOxuspyPavXkBkQhJNppNHDW24XPJzkHzWSDW40S9WXlvFMwUAEZHU0RepstME5I70L/5f0wNlu7e4FMN1dXr+m8Ijh/NnJNbJWR2mdReSvu5JhgRdKNtFigiV5BknrRS2oHIUUrRdmArLCTXJZrKwSLqUXREJP0pdiuQ/c+aYuxegApGc08rHJYYIxSM1ZRqWV2VCHwMEDk4Hfb/ANmrqCwldlEkYjQrtJURnHfoQf8ADQNtqMNpDtdDtjwBhucdjg1NL8TwQoRDbTTP0CIRk1aE4pYbJzi2w7UbcrZRxRqCFcHBAGf0AFQxz3EJxHAHX6ih7G/1DVJsXNkLSELkAEuxP9sUWVw2xTuI7Jyfv2FTnZ5eI8YcckNxd6xLhbZYYV/M4ySPaonim2ZeQu/dqK9P5tsz7c//ADU5J+vc1MiO2MqqKP4cjJ/TpUpScu2PGKiVptpGGVRmb2qVLUAD1XUHvk1ZemOnLH3ppVIySyoKntGyRJ6YOE3NjwMCpUZyONiimSSwxjLsMe1DSXu91jiUDPXNEATI20Zkc/ao/XRjhcn3zSQKkpYlZHI8vgf2p0lvGVyihX/rNHDO4FUKxFO4BPAqGKCSPq5PkeaaZP5UQnuSOlNtAmChi0mxMOw5wDx/n0oiJHAPB56qOAfr3rJi0Kr8uUYdADStcahEQYrmQY7Fziob0vopg2aJNIACRGngDFE/hoI0C44H+6sWuu6rGAHdZAOcEVMvxNdAH17MEY6q1MpoDTNgAqj5QFHgcUPNdBD38YAzWPf42iB2PaTADwQamj+LdNmxvM0X9S0d6BtZqEMknMkjKp/lQ4P3pQljCNzoc+SxPP61Sw67pswAS7j3dg3FWNreWL/zoT25oLL+znwFmSB1CxW7Njp8uBUMtm1wdrKqL5zzRaXURGEdPsRTZLgggY69KbACJbVUGC5A8ClJCDgfen4MgyeBSbMHinAROGYneMg9hSekQTu7dv8AOtEKAeF6UuB0A3N5onH/2Q==" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="3" class="row">
+        <div id="3" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Daily Mail</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Hot balloon that frees diabetics from insulin jabs begins trials</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">But in type 2 diabetics, the walls of the duodenum become thickened as a 
+result of poor diet. It no longer signals the release of insulin, 
+meaning ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">2 weeks ago</small></p>
+          </div><img src="data:image/jpeg;base64,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" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="4" class="row">
+        <div id="4" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">WFYI</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Treating COVID-19 And Diabetes Is Challenge for Hospitals</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">“I found myself needing to use double the amount of insulin I would 
+normally use to ... blood sugar levels, COVID is doing that at a rate that 
+worries health care workers. ... These sensors are typically used by 
+diabetics at home.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">2 weeks ago</small></p>
+          </div><img src="data:image/jpeg;base64,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" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="5" class="row">
+        <div id="5" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">The Newtown Bee</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Pandemic Places Greater Burdens On Some Local Diabetics</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">After losing her job and employer-provided health coverage, Bridget Seaman 
+said she has gotten to the point where she is rationing her insulin ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">3 weeks ago</small></p>
+          </div><img src="data:image/jpeg;base64,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" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="6" class="row">
+        <div id="6" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">WFYI</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">COVID-19 And Diabetes Can Be A Dangerous Mix</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">But many diabetics worldwide are battling health complications from a ... 
+cause insulin resistance even in previously healthy people, she says.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">2 weeks ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSdXXWQoNJkhpKqYH1rDwy8RKgbYyLZeuPbPG7dqnrWLMDJ0iyVTsoN24&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="7" class="row">
+        <div id="7" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">WWLTV.com</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Mackie: Type-2 diabetics need strength exercises in addition to aerobic</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Mackie: Type-2 diabetics need strength exercises in addition to ... or 
+doesn't produce enough insulin to maintain normal glucose levels. ... 
+RELATED: Mackie: Once again Mediterranean diet a winner for weight loss, 
+health.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">4 weeks ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKPGRpWzFqCq6FCfLguTLxSCYB0QXaQgCmmBNJcqCxC72qXmb5v1kx5GM&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="8" class="row">
+        <div id="8" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">GlobeNewswire</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Reversirol Reviews – Best Diabetes Supplement launched ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">The ingredients help improve health by flushing toxins from the body. In 
+addition, it ... Insulin resistance is prevented because of the 
+ingredients. ... of insulin. For this reason, the ingredient is especially 
+good for diabetics.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">4 days ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCdwgttQOMR0RpmtWlerGQXAVssdjJf9lqacZqU7ocW6DRGCXBuZ3ALn0&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="9" class="row">
+        <div id="9" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">PostBulletin.com</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Health story of 2019: Keto can help with Type 2 Diabetes</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Given that the body only releases insulin in response to dietary ... In 
+other words, keto can work so effectively in diabetics that should 
+patients ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Dec 30, 2019</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWy_H9RMelF_--HRRCdccVX5MnIMrPGfTCOceXEA3OKa-u8oUnqsySizk&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="10" class="row">
+        <div id="10" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Borgen Project</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">The Challenges of Having Type 1 Diabetes in Developing ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Therefore, Type 1 diabetics must inject themselves with insulin and monitor 
+their ... Klatman is the Health Systems Specialist for Life for a Child, ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">3 weeks ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJierdxO0s0xnijpyLh0GtvVl6ugswgJ_wvHuZwcnpgfcyD4_eM5Tkghs&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="11" class="row">
+        <div id="11" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">INSIDER</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Keto diet could help diabetics control blood sugar, lose weight: study - Insider</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Researchers found the keto diet improved blood sugar and insulin ... fat 
+diet was effective at helping diabetics control their blood sugar levels 
+and ... medical director for Virta Health, a company that specialized in 
+keto diets for ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">4 weeks ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnCQQ7w82HRL-2RQZwxcH3rx8zZOw3fE4A-vgYchymq9GKvnMAuSycEKM&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="12" class="row">
+        <div id="12" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">WOSU</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Hospitals Face Challenges In Treating COVID-19 Patients ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">“At one point, half of our patients were on insulin,�? says Mary Ellen Neal, 
+a nurse and project manager at Indiana University Health Methodist 
+Hospital. “And, of ... These sensors are typically used by diabetics at 
+home. But the ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">6 days ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRT9QwHowMi5vdvDsoYXwSCeUVMm1SEbw4ecTBMvocZA-lVg7W2TQkmdk&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="13" class="row">
+        <div id="13" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">ThePrint</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Diabetics’ sugar can rise based on how much they think they’re having, Harvard study finds</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">This is in line with other works that found no evidence that insulin action 
+determines the steady-state level of glucose,�? the study says.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">1 month ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhisoZedVDvhzs3crVslq3SwNVcwo8QzeC2xWPSVSN4lIrBXmJFNTtPc8&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="14" class="row">
+        <div id="14" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Illinois Newsroom</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">People With Diabetes Struggle During COVID-19 Economic ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Rationing insulin can have disastrous health effects, including death. ... 
+cross to buy his insulin or the insulin he provides to other diabetics.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">21 hours ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjsYyUvbQWFLuI7eKMptPgQhNbX98EGv6wUZ_CXlA6weKirdC71Ae4Eu0&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="15" class="row">
+        <div id="15" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Courthouse News Service</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Judge Hears Big Pharma Case Against Minnesota Insulin Program</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">At issue is the Alec Smith Insulin Affordability Act, a law passed last ... 
+lost jobs putting many diabetics out of work and health insurance and ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">3 weeks ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa9QxxC_Hb1dq0KgaNrBNKbWXf-cXf1ZSrs3ZNxPXOIxYIo3vmfWzNgMo&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="16" class="row">
+        <div id="16" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">CTech</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Food Tech company helps diabetics improve their health</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Food Tech company helps diabetics improve their health ... We are seeing 
+people whose insulin has dropped, and people whose levels have improved. 
+This is ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">3 weeks ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYFZOHKw8TszjEqJBXme0sKz1NysV7H7tM17CGu1nhdPox35HDDoh4BeY&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="17" class="row">
+        <div id="17" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Times of India</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Winter diet plan for diabetics: Recommended breakfast, lunch, dinner to control blood sugar levels</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Diabetes is a condition where the body is unable to produce insulin, which 
+is a hormone responsible for the synthesis of sugar; it can also ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">2 weeks ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbOr5tfCqVHxeD6UuK44Vxzr9oJMB5irb-EOow-xDcQfFauw4m9myEgAs&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="18" class="row">
+        <div id="18" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Hartford Courant</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">These 5 new Connecticut laws take effect on Jan. 1</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Behavioral health assessments for police officers, lower taxes on pension 
+... insulin supplies are among the new laws that will take effect on Jan. 
+1. ... 1 allows diabetics one emergency diabetes-related prescription a 
+year ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">51 mins ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvJvDTxKPrBsTu2k63QMrEqvC0VDqftYBpUOSXzVZ7U4GKuKx5sAVP5I&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="19" class="row">
+        <div id="19" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">The Philadelphia Inquirer</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">The coronavirus pandemic is killing people with diabetes or Alzheimer’s who didn’t even contract the virus</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">... the pandemic eroding the health and welfare of her diabetes patients. 
+... COVID pandemic, up to 25% of insulin-dependent diabetics rationed ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">1 week ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnqw_ana2AnAignOQJVRL95l5pZNVOqbxCwXQLtkR1jJiHCu1tysRLE4U&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="20" class="row">
+        <div id="20" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Hindustan Times</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">This jackfruit flour from India can fight diabetes and even the American Diabetes Association agrees</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">One out of every six diabetics in this world is Indian. ... Also, read: 
+These 6 health benefits of jackfruit will even make haters fall in love 
+with ... In one year I could discontinue insulin and control my sugar 
+levels with just tablets.�?.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">1 week ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSITS1ZeNsiM8DW3mLxQb8fRRc3o0uvTAB3pdBZNeKdoLPsWtnNyb7zTfo&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="21" class="row">
+        <div id="21" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Financial Express</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">How to stay healthy in winters: 10 Naturopathy and Yoga tips for Diabetics</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Also, diabetics should refrain from consuming dry fruits as the fructose in 
+them may spike the sugar level. 2. Sufficient Hydration. It is essential 
+to ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">1 day ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmr4R-UIzvzeASgoMusvLaK_mFLHLlBw65X0CilyXEEIcaPyoblW2MLxw&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="22" class="row">
+        <div id="22" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">TheHealthSite</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Yoga for Diabetes: Try these 5 asanas to keep your blood sugar under control</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">... what you should know about the significance of exercise for diabetics. 
+... your body starts responding to insulin, helping to reduce your blood 
+glucose. ... important ones amongst these is – yoga manages your heart 
+health.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">2 days ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuLY46eYPgOulMhgph-_avpOneK2QdXZqG1jmX3w8EMH3vJdAbM5x1nJw&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="23" class="row">
+        <div id="23" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Study Finds</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Common diabetes drug may trigger rare, life-threatening complications for COVID-19 patients</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">For diabetics with EuDKA, their cells can't absorb enough glucose ... They 
+say when the virus infection humans, it binds to the pancreas cells which 
+insulin. ... This is already a standard health recommendation for one of 
+the ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">16 hours ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbX01YQHj8dY9_U2I5q-QAUV9OG0XG2hev-e-Bbrn0PcfrE-aj_XQpXbE&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="24" class="row">
+        <div id="24" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">The Colorado Sun</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Rising insulin costs force 40% of Colorado diabetics to ration ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Results of the insulin inflation have real and severe consequences for 
+Coloradans' health, Weiser said, expanding on a report required by the ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">1 month ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvy51LyfXJ-dgAuzpM-yk1gutUMAdD_rSKAwxeU7OSXVSfAMZ0xxvVX-4&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="25" class="row">
+        <div id="25" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">fingerlakes1.com</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">The surprising health benefits of chocolate</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Specifically, the flavanols in chocolate help cells secrete insulin to ... 
+Obviously, to reap the positive effects of cocoa diabetics should opt 
+for ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">5 days ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE5FDMg09uLRIlGgHcbYmCkPSf8H6H7so9rtZZXBCl7ERSNKQBUQq69wE&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="26" class="row">
+        <div id="26" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">The Dallas Morning News</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">As job loss strips Americans of health insurance, diabetics turn to insulin-sharing underground</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">The people in the networks share extra insulin for free when they have it. 
+After losing her ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Oct 7, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLVTapjm4ltFcEOfnkHRGe49sn4fFdSOq0_GmcvSUS6Z9v2u8Vddg4ZbU&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="27" class="row">
+        <div id="27" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">U.S. News & World Report</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Minimally Invasive Procedure May Free Type 2 Diabetics ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">On average, they had been on insulin just under three years. ... Dr. 
+Akankasha Goyal, an endocrinologist at NYU Langone Health in New York ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Oct 13, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJoLxEHrg86_Qnzr4whum7PEI8X3biGogAvsT1LBnmqusMxZiTwtn2uQg&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="28" class="row">
+        <div id="28" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">The Pike County Courier</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Medical contractor says managing prisoners' health a ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">“Diabetics not being tested. Insulin given without blood sugars. It's 
+dangerous.�? Jill Stramara, Belsak's daughter, enumerated the dire ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">5 days ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQodiRgPGuVYyaX8uBsfQe4RvAyQ_t2Ht-1RW5vfkKHnHnKCu2KcX41DIk&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="29" class="row">
+        <div id="29" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Belfast Live</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Lisburn teenager records handy video guide on how type 1 diabetics can enjoy Christmas treats</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Lisburn teenager records handy video guide on how type 1 diabetics can ... 
+what way our blood sugars are going to go and how much insulin we ... with 
+diabetes can put your health at increased risk if you catch the virus." ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">6 days ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqUlLia8zak9xkmc6TnGig8vzNPGlcC9SZoYAStXpgBnL45nGOsUr5_kk&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="30" class="row">
+        <div id="30" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Gulf News</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Young woman with Type 1 diabetes receives UAE's first ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Menu. Menu. Health · UAE · Business · Going out · maghrib 5:41PM ... while 
+the new pancreas will eliminate her reliance on insulin injections, the 
+hospital ... offers fresh hope for Type 1 diabetics with significant 
+complications.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">1 week ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeutn3uf5he52vFmIacLhGkeeycQG-TofMYunUypDLZzHWCe_aUIoDJ-k&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="31" class="row">
+        <div id="31" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">The Guardian</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">‘Profit over death’: millions of American diabetics struggle to afford insulin</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Without health insurance for the past few years, Hart has relied on Walmart 
+insulin at $26 a vial, while he continues trying to get health insurance ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Oct 30, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHb9ngn7zej4VvGs8LgRYXlo5TfQFvBCHVAcn2ePWSw1NAeF1Fjuh0wZQ&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="32" class="row">
+        <div id="32" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Popular Science</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Sea snail venom could lead to better insulin for diabetics</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">More Health. Health · Why two doses of the new COVID-19 vaccines are better 
+that one · A Uzbekistani doctor holds up ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Jun 2, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNh0bqp4-LfVlsQcOgA8hZQJ1jmxKJamnVPVUtzQHWanmsk6QC6l77Uvs&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="33" class="row">
+        <div id="33" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Farming Sector</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Pen Needles Market Scope, Segmented By Company ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Diabetics who require frequent injection of insulin in the body have found 
+... patients suffering from almost any type of health problem including ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">4 hours ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVV3IizzUg5UrfNB-ON4-k7uPu3Ovkj90PAhEU1SI4WvFizV-6Im6w89E&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="34" class="row">
+        <div id="34" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">EurekAlert</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">"Game-changing" procedure shown to discontinue insulin ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">... procedure shown to discontinue insulin treatment in type 2 diabetics 
+... improving their blood glucose control and overall metabolic health.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Oct 12, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC_gQP8sIF-_MfPj7k4B0J3dG9ThX010eNiaBjs_OBvQ1quXwZf-deSO7T&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="35" class="row">
+        <div id="35" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">FOX Carolina</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">ONLY on FOX: Greenville man shares how he got off of 14 medications amidst a pandemic</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">... some of the physically and mental health challenges that he was facing. 
+... He says he wants to share his message for other type two diabetics or 
+... and removed all 14 different medications he started on, including 
+insulin, ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">2 weeks ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk4-BRjLbumZPFUPRCQGV9HtJcbj02PUvlRXNtBd8&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="36" class="row">
+        <div id="36" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Daily Mail</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Simple treatment that could free diabetics from insulin</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">A 45-minute hospital procedure could enable those with type 2 diabetes to 
+stop using insulin. Advertisement. A small hot water-filled balloon is ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Oct 12, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv7cGMMkpfR7GiohSVvzJUkOxwBJmmyigQlY1Zg4rMqs3nCfb3DoieL_A&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="37" class="row">
+        <div id="37" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Healthline</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Tea and Diabetes: Benefits, Risks, and Types to Try</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Green tea offers a multitude of health benefits, some of which are 
+particularly ... Additionally, studies show that hibiscus may help reduce 
+insulin ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Jun 18, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzv9r609RGdFYpnfrXpiBL3CjNxgbk2rJSNz9hFUcPb6hErSfilAUpr0U&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="38" class="row">
+        <div id="38" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">NBC News</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">States are trying to cap the price of insulin. Pharmaceutical companies are pushing back.</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Eli Lilly's proposal also would have capped the monthly cost of insulin at 
+$100, but only for diabetics with health insurance. It offered nothing 
+for ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Aug 15, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBpuvKOxHAVS5mho5yQZmzkKhOX-sc26KyLAKDBJmqkrdBV4bQK1y243Q&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="39" class="row">
+        <div id="39" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Washington Post</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Trump boasted he made insulin so cheap ‘it’s like water.’ Americans with diabetes beg to differ.</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">' �? said Tiffany Garrioch, 36, a public health nurse and educator in 
+Minnesota with Type 1 diabetes, who watched the debate with her family. AD. 
+“ ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Sep 30, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8akwb9zd9iQ6A5d_Dzxr9QrSoAJ5dAiqVCd_vOkP_R9PA9Hg_LQupf4w&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="40" class="row">
+        <div id="40" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Billings Gazette</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Remember the people now homeless in Billings</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Insulin cannot be adequately stored for diabetics. ... The Healthcare for 
+the Homeless team offers counseling for mental health and addictions.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">1 week ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE703oALxUYLfpl1tVnngknrTYHb_wJeVr1vfHM-A&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="41" class="row">
+        <div id="41" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">PhillyVoice.com</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Pumps, glucose monitors driving up health care costs for diabetics</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">... found that insulin costs comprise major expense for diabetics, but they 
+accounted for just 18% of total out-of-pocket health care expenses.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Jun 3, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdn81oIpAYvp1DQ-V042swuJKMXrDMC0-x3JZScbNWzZCxU7E0nVTF5oo&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="42" class="row">
+        <div id="42" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Seattle Times</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Washington’s temporary cap on insulin costs gives state, diabetics time to find permanent solution</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Washington's temporary cap on insulin costs gives state, diabetics time ... 
+who as a manager of a retail store has health insurance but says the ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Mar 30, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMF7TD74uZ_uva4cltclxwkFAOkpEGcGLgx2m249RyuiRFFNi6ajyNVVI&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="43" class="row">
+        <div id="43" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">PINKVILLA</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">4 Diabetic friendly recipes to enjoy Christmas without any regret</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Diabetes prevents our body from producing or using the insulin hormone ... 
+Diabetics are strictly not allowed to have any sugary foods. ... They 
+cannot completely avoid everything but have to take care of their health as 
+well.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">1 week ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-pj3cqpGDOvxDZEh2xQW7PmjKpkaO7EuAGuBMWW3Wpa2Fulobj0lrnBo&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="44" class="row">
+        <div id="44" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">STAT</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Why people with diabetes are being hit so hard by Covid-19</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">“It underscores the health inequity problem,�? she added: “Their ... In 
+people with type 1 diabetes, the insulin-producing pancreatic islet 
+cells ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Oct 1, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI1JQjynRq15u1T1jjD1hiZNJ2VHb4snCQ_dyn1b_p5z6hncxnc6T8uqQ&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="45" class="row">
+        <div id="45" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Miami Herald</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Next year, diabetics in Medicare may pay less for insulin under new Part D program</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Next year, diabetics in Medicare may pay less for insulin under new ... 
+director of the Center for Health Management and Policy at the Miami ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Oct 14, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Scs1jXsb2Zr81xe5wxWY_aRLwDC2sgRMRNejzeGTnuY5DX8T_88SJLI&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="46" class="row">
+        <div id="46" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Newsday</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Coronavirus poses special risks for diabetics</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Type 1 diabetics don't make insulin and need to inject insulin to survive. 
+... the big unknown to every physician and every person in health care.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">May 1, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHAKLNctCMntu-je1RKuiCLcgS2wG_1shhJ64N-oPJyGR_jVgrOR2YWFE&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="47" class="row">
+        <div id="47" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Quartz</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">How high prices for diabetes care amplify health inequities</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">But today, far too many diabetics struggle to access insulin and the 
+medical devices necessary for our survival. Discovered in 1922 by 
+Frederick ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Jul 15, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8VMtV0Cv10cd5dHCcUewkGugKNwwU-DuNzlbf3kVianRzJaYw6G62bC4&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="48" class="row">
+        <div id="48" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Tampa Bay Times</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Trump says he brought down the cost of insulin. But that’s not true for all Americans</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Depending on the details of an individual health plan, someone ... It's a 
+lifesaving therapy for millions of diabetics who rely on it, Sneed said.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Oct 1, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgZIrFt80cx7oDQYrCNc_mNu_dki3Zh8yGIV2RaibbMy--D9VgFsrprUpu&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="49" class="row">
+        <div id="49" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">TwinCities.com-Pioneer Press</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Minnesota program will provide insulin to needy diabetics</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Minnesota diabetics who need emergency insulin supplies but can't afford 
+them ... public health insurance plans, which already cover insulin.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Jun 30, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXSo4xAswtNfm6ugSGxKLcCzgQpSOOmXDhBiCjhnwTFEocAGjnurEEvno&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="50" class="row">
+        <div id="50" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">St George News</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Advances in medication, technology help diabetics ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Type 1 diabetics can no longer make their own insulin. ... This technology 
+has the potential not only to improve the health of these patients but ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Jun 29, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr7-DextSKegmvbBDMi1EAItCTzpz4u3oRsJf38_ye0ayYKiP1k6l0m4A&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="51" class="row">
+        <div id="51" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Stanford University News</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Experimental two-in-one shot could aid diabetics | Stanford ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Amylin plays a synergistic role with insulin to control blood sugar levels 
+after ... reduce the risk of serious health complications, such as renal 
+failure, blindness, ... In non-diabetics, amylin is secreted from the same 
+cells in the ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">May 11, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGaLPXrpMKfM15c5mKQOMMvlZNboNv3w5VBtclLih7AjUk-XWnFXuKSGU&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="52" class="row">
+        <div id="52" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Houston Chronicle</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">How Houston diabetics are preparing during coronavirus</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">... because she keeps a close watch on her blood sugar and insulin levels. 
+She also pays extra attention to her health, staying fit and sticking to ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">May 5, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8X-a9avsfn4K6FV8gTa03MzcAk0UA45c-GiPNWfnNphYnf4lVgxB2sX0&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="53" class="row">
+        <div id="53" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">The Japan Times</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Stem cell treatment offers new hope for diabetics</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Without them, diabetics must rely on insulin injections or pumps. ... 
+according to the World Health Organization, a figure that includes both 
+Type ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Aug 20, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS325_j2JPQUaGJIaSIKoneKgbDMCgARd_1dHpKqdfd_B-zJu0aq8t8Yho&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="54" class="row">
+        <div id="54" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">indepthnh.org</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">States Trying to Cap Price of Insulin Find Big Drug Firms ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Eli Lilly's proposal also would have capped the monthly cost of insulin at 
+$100, but only for diabetics with health insurance. It offered nothing 
+for ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Aug 16, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtsBIT0dfisgaExwRRb71YLTPmXM7KYdxxM2H7OOi00iUzkkL3LssGh_s&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="55" class="row">
+        <div id="55" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">ABC News</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">People with Type 1 diabetes may be at high risk for severe illness related to coronavirus: Study</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">said Dr. K.M Venkat Narayan, professor of global health and ... its ability 
+to produce insulin, a hormone that helps to control blood sugar levels.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Jun 20, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNpuqh4vOwXC1fmTmfkPIN5FtOXfUE6aZZfTAVBQz8KFVV-kq_-rccGuM&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="56" class="row">
+        <div id="56" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Xinhua</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Spotlight: UK-EU divorce overshadowed by coronavirus ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">... that any delay in the supply of insulin to his children and to 
+diabetics who rely on the medication could have a serious impact on their 
+health.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">3 days ago</small></p>
+          </div><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHAQkBBwgKCgkLDRYPDQwMDQ8UFRAWIB0iIiAdHx8kHDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIABAAEAMBEQACEQEDEQH/xAAWAAEBAQAAAAAAAAAAAAAAAAAGBAL/xAAkEAABAgUEAgMAAAAAAAAAAAABAgMEBQcREwASIUEGMTKB8P/EABgBAAMBAQAAAAAAAAAAAAAAAAIDBAUB/8QAHxEAAgICAQUAAAAAAAAAAAAAAgMAARExIQQFEkGB/9oADAMBAAIRAxEAPwAVLPBI2IpvBVLS3GERaUKRZhmx3AHg5uffYH1qkLqtwLq5mP8AGFN0eVXBt5aofHvQ6UNbT8u0uHi6SARf0dG11DdD71OrWRZxqoplHkETEUdlVPER6ENy4N4kpQgklCbAG6OR+vq0ehEuc7mc3riXx43Ip3MsFDoqnC47MX2cRLgRe179J40su3KWdtzzHB3Jrl0rxwPyf//Z" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="57" class="row">
+        <div id="57" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">ABC News</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Organizations coming together to represent Type 1 diabetics during coronavirus</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">"Because Type 1 diabetics are unable to release insulin after ... to have 
+hypertension and obesity, which increase the risk for poorer health.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Apr 21, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsuLVFcsPpycWLFIC1KTP97Tdhm4uaVdBW21--OUXxjtkdRC7Pnx3YOI4&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="58" class="row">
+        <div id="58" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Connecticut Public Radio</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Conn. Diabetics, Health Experts Champion Bill To Lower ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">National reports show that insulin prices have nearly doubled in recent 
+years. A 2019 report from the Health Care Cost Institute, a nonprofit ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Feb 25, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsJnsAEx0smlK3oSD9F1vNVv1_RJlpOIvOYxORwKmLhXYIiTEWfdzWSWc&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="59" class="row">
+        <div id="59" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Observer-Reporter</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Sky high prices: Soaring insulin costs have diabetics struggling</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">A new study conducted for the U.S. Department of Health and Human Services 
+shows insulin prices in the United States are at least four times higher 
+and – in ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">1 month ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHyjGqFjLsjmnEIE9pQz42__avV-XMuvuDLLHfKaY&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="60" class="row">
+        <div id="60" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">USA TODAY</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Trump asks whether he should take insulin despite not being diabetic</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Type 1 diabetics paid an average of $5,705 for insulin in 2016 – nearly 
+double what they paid in 2012, according to the Health Care Cost ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">May 26, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-eQHYAom-QOQNtnQbBXge5q2kPGOq0lA45b-iXzm2OyAqmGoGPfzkElI&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="61" class="row">
+        <div id="61" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Endocrinology Network</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Cost-Sharing Caps on Insulin Medication Could Cut Costs for ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">... effects of national cost-sharing caps on insulin for type 1 diabetics. 
+... Meister Child Health Evaluation and Research Center, in a statement.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Jul 28, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1krf1jwp5MJnOgJSaEU8YvApd7K559e4P-ae5mAxSwMj8ua9zZA2yEkQ&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="62" class="row">
+        <div id="62" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Daily Press</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Pandemic brings diabetes into spotlight as diabetics at higher risk of severe outcomes if contracting COVID-19</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">The cost for the direct care of diabetics is 14% of all health care dollars 
+... Type 2, or insulin insensitive, is the most common form of diabetes ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Oct 16, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnBf-N-YZJ22IHaDGwOWqAsBdqbdc0Cc9KM_IkLejxVawFiHR6jwSA6no&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="63" class="row">
+        <div id="63" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">The Columbus Dispatch</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Insulin prices double, pinching diabetics’ budgets</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Both bills have been referred to the House Health Committee. Some diabetics 
+ration their insulin as a way to prolong their supply. Rationing led to ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Dec 9, 2019</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWkbl54n6941hrii6lciTVvJ-HYC5gCuJjn7WmWIbG1kiyuEX17nYomEc&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="64" class="row">
+        <div id="64" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">INSIDER</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">How to know if your blood sugar levels are healthy - Insider</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">For diabetics, normal blood sugar levels are considered between 80 to 130 
+... to feeling your best and preventing long-term health complications. ... 
+For people without diabetes, the pancreas releases insulin to help your 
+cells ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Jul 10, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT_08REV48oJ1By4VQBBCWxMisw-0-Zr-dSFdyMuW563TCiXw4bk5dpDg&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="65" class="row">
+        <div id="65" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Kaiser Family Foundation</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Insulin Costs and Coverage in Medicare Part D</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Though not all people with diabetes need insulin, for those who do, it is a 
+life-saving medication and essential to maintaining good health. ... 
+significantly greater number of insulin-dependent diabetics enrolled 
+relative to other ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Jun 4, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6K5s6-91EQSBXdl0be-d4McsZsi7e0BrxN3frVUcOkK_c3irSYakv9Ew&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="66" class="row">
+        <div id="66" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Newsday</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">NY needs to boost access to insulin</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Yet because of the high price of insulin, even though I have health ... 1 
+in 4 diabetics have skimped on insulin because they can't afford it.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">May 22, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR09d7-qSPgnf13Z8NzRLSQzHLTxR5FUSRZvyv2uB-8tFENTp5CVo54gEs&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="67" class="row">
+        <div id="67" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Riverfront Times</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Best Weight Loss Supplements: Top 5 Diet Pills For 2021</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">PhenGold comes with a laundry list of benefits for health-conscious 
+consumers. ... use it in dietary supplements because of its effects on 
+insulin. ... Raspberry ketones have the potential to help diabetics and 
+people struggling ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">23 hours ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2w7hyRqMr2EHGPxCelBnlR7DEB1E2PYsIbZZoVWvO_-RoUM8cV1gGWY0&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="68" class="row">
+        <div id="68" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Health Europa</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Better control of blood sugar for diabetics with two-in-one ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">An experimental two-in-one insulin injection has been created to help 
+diabetics gain better control of their blood sugar. The injection ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">May 12, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBF2bkjGyD7ea6N65yRwtmR9mZBkni5eirMhKYWtlVGu90FJlWxaV1i2s&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="69" class="row">
+        <div id="69" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Science Daily</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Type 2 diabetes: Too much glucagon?</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Patients with type 2 diabetes secrete not only too little insulin but also 
+too much ... Often, type 2 diabetics also have elevated levels of 
+glucagon, ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Apr 20, 2020</small></p>
+          </div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAe1BMVEX///8cGlmgfHHAqKL8/P28vM69pJ2ko7whH13Ou7bDrKWvrsSFhKX09PdrapNGRHjb2+VxcJd/fqGoqL/s7PHXyMTr5OLm5u0jIV5vbpV/TkCSal6LX1JoLx5BP3Tf09BRUIAwLmdYV4WvkYi2mpLPz9xhYIuDVEZoLh2GDlmAAAAAkUlEQVQYlW3P0Q6CMAwF0BY3xsaQDQYibKAC6v9/oa48QKJ9aNKTm6YF+C2Wa1Ec4YyIJdtng9ZUmO/AsQZneZOmqiW4ZN2VM0j6wQdFIjrE0SUngClsGSdKrCLAECPi5oDdHwTz/G01amY6S7BEKEbMMFu3xEIr9NOuQODlfk4EGQ4vJL1/vQ8BaJSS7Z/X4QN3zAbmXQKBLwAAAABJRU5ErkJggg==" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="70" class="row">
+        <div id="70" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">INSIDER</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">The different types of insulin and how to use them for diabetes treatment - Insider</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Most insulin-dependent diabetics need to use both a short-acting and ... 
+diet and exercise under the care of an experienced health care team." ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Sep 22, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMM_GOVHaFRxpv1tw7EFHnXgoeRVjZMs6sZtEFYDXrvLuSg3q9BcrTas&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="71" class="row">
+        <div id="71" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Madison.com</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Sticker shock: Diabetics, lawmakers battle increasing insulin cost</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Nearly a quarter of diabetics who take insulin asked their doctor for a 
+cheaper ... “It affects virtually all of our patients, whether they have 
+health ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Dec 15, 2019</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ208jIVR-sjOOLBaywhYO3VS_M_cq-g9knMZYicG4&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="72" class="row">
+        <div id="72" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">PhillyVoice.com</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Insulin costs far less on Craigslist – but it's a risky purchase for ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">The surging cost of insulin is prompting some diabetics to purchase the 
+life-saving medication on Craigslist, though health experts say such 
+sales ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Feb 17, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSui8r7XVwAGUTv4CJLEnkTDOuKU6Ba1gCwNJ-vIVA5e4ojtrQwHhwzRdA&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="73" class="row">
+        <div id="73" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">TheHealthSite</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">New two-in-one shot may help diabetics better control their blood sugar: 5 natural remedies worth trying</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">The experimental two-in-one shot will allow insulin and amylin-based drug 
+to be given together in a single injection. This may give diabetics a ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">May 14, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ8XTMX8sVXGnRGFiBuJDEbgFMfOLsyfXVyfoMdpz1ZveaWXbZHngnHMc&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="74" class="row">
+        <div id="74" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">NDTV</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Diabetes Management: Expert-Recommended Diet, Lifestyle & Blood Glucose Monitoring Tips For Recently-Diagnosed Diabetics</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">There are a lot of do's and don'ts to follow for diabetics. ... to Dr 
+Chavan, 90% of people with (type 2) diabetes have insulin resistance. This 
+is a ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Sep 15, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRF2IGJhwN_-HNMoLj7xPg6PB7vwZwROM2Fj234t2-TmpPRyLVXYp-sGY&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="75" class="row">
+        <div id="75" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Kaiser Health News</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Under Pressure, Administration Looks To Cap Insulin Prices ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">... Insulin Prices For Medicare That Could Save Diabetics Hundreds Of ... 
+Both they and health insurers have begun offering discounted insulin.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Mar 12, 2020</small></p>
+          </div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAJ1BMVEVHcEwAdr0AdbwAdr0Adr0Adr0Adr0Adr0Adr0Adr0Adr0Adr0Adr2/QNUBAAAADHRSTlMA1BiLxu+znz9gdHjjVfNuAAAAVElEQVQYlXWOwQ3AIAwDTSEFWvaftxgazIc8Yut0igK0PgFAYbFeHBhLEajMBAFGuwQeRoTAELBAernrBkzCBONExvlGQJRy+GMq9wakOFiKg1/5ALKRBuQBo6EPAAAAAElFTkSuQmCC" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="76" class="row">
+        <div id="76" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Sifted</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">The nanofibre 'teabag' that could replace diabetics' insulin ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Diabetes affects around 422m people worldwide and is classed as an epidemic 
+by the World Health Organisation. It is soon to be the seventh ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Jun 16, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwtOxrVXelAvMgszuO2s0kWnlv6wFvxLmQBsQefDlV5V1m5kvit_hgaU&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="77" class="row">
+        <div id="77" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Healthline</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Brain Fog and Diabetes: What's the Connection?</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Insulin (a hormone created by the pancreas) allows the body to use sugar or 
+... These measures can also lower your risk of developing future health 
+problems ... leading to a serious condition in diabetics called 
+ketoacidosis.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Feb 21, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnhzsN2ebO0lQuSeu_UBHe2YBa_tQJ0Qt4cDLk5YCiGWnx6Q0J8f4sLAk&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="78" class="row">
+        <div id="78" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">UN News</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">UN leads bid for cheaper insulin, expanding access for ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">UN leads bid for cheaper insulin, expanding access for diabetics worldwide. 
+WHO/A. Loke. A health worker checks a diabetic patient's ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Nov 13, 2019</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzQ86QPczDjQsE374raoFZPjUW-lgQwPPAQ1J7kj9yBIKW_JqVxqGbN6I&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="79" class="row">
+        <div id="79" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Farming Sector</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Digital Health Market Current and Future Trends 2017-2025</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">The global digital health market is driven by a rising demand for improved 
+... Recently, the makers of a touchscreen insulin pump, Tandem ... Onduo, a 
+joint venture firm will start developing ways to aid diabetics to make 
+better ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">1 day ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHd_t2La81_mSDGhu-dPkXId6oUX03JlKWTbEPhsYJOG7DewlAcSzMC8I&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="80" class="row">
+        <div id="80" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">PolitiFact</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Trump inflates insulin help for seniors</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">He presents his move on insulin as a boon to diabetics in general. ... 
+Trump's order targeted a select group of health care providers, 
+Federally ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Aug 3, 2020</small></p>
+          </div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAb1BMVEWOkJJDREZ8fYB+f4JjZGZ6e35vcHKUlJaBgoWIiY2hoqX//fn7+fX39fHCwb+cnZ9ub3GjpaeysK/x7+t1dXd8fH+BgoWJiol0qlzS0M6nqKtbW11lZmjm4+CLmIbd29hvwj6bppahrZx+rHGczn3QZDQyAAAAC3RSTlP6ZF9b+ff4/vj4VRzgnC8AAAC6SURBVBiVJc5JdsQgDARQJTEWhBkzY5vuTu5/xohOvVeL+toIvjlFUICC+AVsnM6d1JjR9w7AznOUYEwzBpP1AHzgJVsZ6KS6bBHAnVZKt9mMVOpYEAmUlIq20sD/4XhnAQOetJLTTGMOKTUyEFnLEIJpqxfuBHRRx5yXnEW/wYdg6Uew3YQFiNb610+9oeScNgCa/VV/H/XOKcYFvvtnfRCkFB1B794+71rvQpvgE0EIzhnb923bxscf9UwPgS2+cl4AAAAASUVORK5CYII=" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="81" class="row">
+        <div id="81" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">The Philadelphia Inquirer</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Diabetes has a treatment crisis worsened by COVID-19 | Opinion</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Insulin affordability has been a major issue for the health of millions of 
+... too expensive for a quarter of insulin-dependent diabetics to afford.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Sep 8, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tzGNL6T3V5QNbsHDNwIv6t5Zw5V_PQsUQv0crQtujcuLTWktSWnZKc8&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="82" class="row">
+        <div id="82" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">New Atlas</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Insulin-releasing implant prototype could let diabetics ditch ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">But in people with diabetes, these cells no longer perform this function 
+properly, leading to serious health repercussions. This problem is 
+normally ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">May 29, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGCm5P6kxpVITkl2QBiruFLaTeMnWcocT-VZrp405RwdqR-onNyHYQk_4&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="83" class="row">
+        <div id="83" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">American Action Forum</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Research: Understanding the Insulin Market</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Diabetes is a growing health issue in America and is the seventh leading 
+... Insulin is a necessary medication for nearly all type 1 diabetics 
+(1.4 ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Mar 3, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtX4IOR_6EJIc5oBB_kH7M65b1vOEr-TDB5RBDgnzPnO3yXFcB-05fYuY&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="84" class="row">
+        <div id="84" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">American Action Forum</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Federal and State Actions to Address Insulin Costs - AAF</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">In 2017, 37 percent of diabetics had private insurance. ... health plan 
+(HDHP) has the option of treating insulin as a preventive therapeutic.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Apr 29, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSVHTE1IzdOtkAC1clDNlHncgWLQHegm1_05fkKW_HhNTXdTA5rSP_aVU&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="85" class="row">
+        <div id="85" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Florida Today</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Mitra: Many Americans living with prediabetes without knowing it</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Insulin is a hormone that helps cells absorb blood sugar for energy. ... 
+with all the tools, health tips and food ideas you need to prevent 
+diabetes. ... with or without insulin in Type 2 diabetics, whereas Type 1 
+diabetics must use ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">1 month ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdUG1xNvN9MMmSBJn3gKk3b_htkmcAo3ax4D3K17v2sad5s3oJAcX4tN0&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="86" class="row">
+        <div id="86" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Medical News Today</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Meats for diabetes: Meats that are healthy and meats to avoid</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">The National Institutes of Health (NIH) list only turkey or chicken breast 
+... People with diabetes need to monitor how their diet and insulin ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Aug 9, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcQAnacr-EGipZyrXaAK5Ok4TxTrFO05Gtpym8C4NbkUZyIcaE72U0OIU&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="87" class="row">
+        <div id="87" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">NDTV Food</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">How Diabetics Can Lower The Risk Of Being Infected By COVID-19; Expert Suggests Diet Tips</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">World Diabetes Day 2020: Sugary and fatty foods containing high calories 
+can increase blood glucose and cause insulin resistance and reduced ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">1 month ago</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvrb07Xf8zC87VB-m7o7ettgdprIBCHq5qaH4Iit2CxrMMcukfjkhZaVw&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="88" class="row">
+        <div id="88" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Folio - University of Alberta</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">DIY diabetics create artificial pancreas, push health-care ...</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">“Diabetics have developed, programmed and are now living on the most 
+sophisticated form of insulin delivery currently available in the 
+world,�? ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">May 28, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU8vDtcIPZRosJljTuReWXVY2EAEV_me_ApDgWYXbMLpEwiNE8onVb-p4&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="89" class="row">
+        <div id="89" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Radio Free Europe/ Radio Liberty</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">'There Is No Insulin': Desperate Iranians Tweet Calls For Life-Saving Drug</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Tens of thousands of diabetics in Iran are said to be facing shortages of 
+... Iranian media say that for months, Health Ministry officials have ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Oct 21, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9oiTQ715edrho3H29jHIn6z5QfYeCvb9Lx-oNHfDs5SRR75fuEtyZDDk&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="90" class="row">
+        <div id="90" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">The CT Mirror</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Best of 2019: Diabetics taking desperate measures as cost of insulin skyrockets</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">In recent years, many diabetic patients without health insurance have found 
+insulin to be completely unaffordable as its cost has jumped ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Dec 30, 2019</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVovxemR31fTZ2-F_IaSMQv4G3m1lRvBM-S4B9fK4&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="91" class="row">
+        <div id="91" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Medical News Today</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Are carrots good for people with diabetes? Benefits and more</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Eating more fiber can improve blood glucose levels and boost insulin ... As 
+well as diabetes, a person may also have other health risks, and they may 
+need ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Apr 24, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQziG8nTRT64DMGz4meCAyiM0BUIKN2KBVbvPubYISImX3fyoLcXEvXRkE&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="92" class="row">
+        <div id="92" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">EndocrineWeb</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">CBD for Diabetes?</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">CBD may also improve insulin resistance and pancreas health. In a study on 
+... Another potential benefit of CBD for diabetics? It can help ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Aug 11, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ1BvbVqJxti2JEUQb54KvodC1r7Hx4djoCSiEpsO5rCAZJU7I1DAsdLA&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="93" class="row">
+        <div id="93" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">ZDNet</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Diabetes management: How researchers are looking at new approaches from insulin patches to an artificial pancreas</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Instead of using the insulin made by their pancreas, type 1 diabetics get 
+... manager in Frost and Sullivan's transformational health practice.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">May 11, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_CVq2tm1Faup_grJY0qzIa44N7w8lsCk_6zUZIgd1CtgZaiAvOeC_GYQ&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="94" class="row">
+        <div id="94" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Health.com</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Tom Hanks Has Diabetes and COVID-19—Here’s Why the Condition Can Make Coronavirus More Severe</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">This happens when your body doesn't make enough (or any) insulin, ... 
+cells, it builds up in the blood, which can lead to health problems like 
+heart disease, ... Past that, however, there are extra steps diabetics 
+diagnosed with ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Mar 13, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLysz9nK4t9GyT5pxqJRTw4vDLru5rKuNHWXripGTuI4GyQ906aCOi1yg&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="95" class="row">
+        <div id="95" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">The Indian Express</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">How diabetics can manage stress during lockdown to control blood sugar levels</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">But evidence has shown that as long as diabetics keep their blood sugar 
+levels ... has also affected people's mental health, adding to their stress 
+levels. ... to many factors like non-availability of medicines and insulin 
+injections, ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">May 26, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIR2PbiblRm44FBMu3tUGOG5cb7SXr-EVtiJDlqD6aDyGsD-i3_bDmMKw&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="96" class="row">
+        <div id="96" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Direct Relief</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">In Sudan, Those with Diabetes Face Increased Risks Amid Pandemic</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Food scarcity and a lack of health care services have led to acute ... “The 
+food that you eat determines how much insulin you need to give ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Aug 26, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6rBPlNxj8J9vpNB-_4O4pRv6VpmSIwAZd2E7LJovjQcKHcbaK6eLPd4w&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="97" class="row">
+        <div id="97" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">American Action Forum</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Insulin Cost and Pricing Trends - AAF</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">According to the Health Care Cost Institute, the average insulin user with 
+... $48 billion (20 percent) of the direct medical costs of diabetics.</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Apr 2, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSVHTE1IzdOtkAC1clDNlHncgWLQHegm1_05fkKW_HhNTXdTA5rSP_aVU&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <hr>
+      <p>SiviSoft</p>
+      <div id="98" class="row">
+        <div id="98" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">Salt Lake Tribune</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Letter: Trump's order won't help most diabetics</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">Insulin is incredibly cheap to make (costing companies around $5 per vial, 
+and listed at $332 per vial), and diabetics require it to survive. Since ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Oct 7, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSbEiuHc7wsg7Zc8WFRsewr-S6b0rXfVpdem2fjFgq3SvKKBo9xb_7tA&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div id="99" class="row">
+        <div id="99" style="padding:2px!important;margin-left:20px;margin-bottom:5px;flex-direction:row-reverse;" class="col card">
+          <!--#{valsub.position} #{valsub.title}-->
+          <div style="padding:5px;" class="card-body">
+            <h5 style="font-size:25px!important;margin-bottom:8px;margin-top:8px;" class="card-title">WKRC TV Cincinnati</h5>
+            <h5 style="font-size:30px!important;color:#5a5aef;margin-bottom:5px;" class="card-title">Why some people are resorting to black market insulin</h5>
+            <div style="max-height:80px!important;overflow: hidden;text-overflow: ellipsis;">
+              <p style="font-size:28px!important;margin-bottom:6px;max-width:75ch;" class="card-text">WASHINGTON (SBG) — With insulin costs skyrocketing and a loss of ... some 
+diabetics are seeking alternative solutions to get the life-saving ... 
+without access to insulin and will undoubtedly jeopardize the health of 
+countless ...</p>
+            </div>
+            <p class="card-text"> <small style="line-height:35px!important;font-size:155%;" class="text-muted">Aug 12, 2020</small></p>
+          </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcHyI8-q23Dj6R8LKQZa8GCWz4GTDr4fkUZdh5lyi1jPSve4VRv_Ln_rQ&amp;usqp=CAI&amp;s" style="max-width:120px;height:120px;margin:8px;border-radius:5%;" class="img-fluid card-img-bottom">
+        </div>
+      </div>
+      <div style="height:200px;"></div>
+    </div>
+  </body>
+</html>
